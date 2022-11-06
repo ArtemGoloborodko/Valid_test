@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="/css/choices.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+    <script defer src="/script/choices.js"></script>
+    <script defer src="/script/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container fon--container">
+            <div class="block fon--block">
+                <h1 class="h1">Preferences</h1>
+                <p class="text--fon">On&nbsp;this page you can configure the main system parameters available for
+                    customization
+                </p>
+
+                <div class="valid">
+
+                    <form class="valid--form" action="#">
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">Company Title</label>
+                            <input class="valid--input" type="text" placeholder="Default" pattern=".{1,}">
+                        </div>
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">First Day</label>
+                            <select class="valid--input js-choice select_option" name="selectcheck" id="select"
+                                onchange="SaveSelectValue(this)">
+                                <option onchange="SetData(this)" value="Monday">Monday</option>
+                                <option onchange="SetData(this)" value="Sunday">Sunday</option>
+                                <option onchange="SetData(this)" value="System">System</option>
+                            </select>
+                        </div>
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">Container Width</label>
+                            <select class="valid--input js-choice2 select_option" name="selectcheck2"
+                                onchange="SaveSelectValue(this)">
+                                <option value="Fixed"  onchange="SetData(this)">Fixed</option>
+                                <option value="Sunday" onchange="SetData(this)">Sunday</option>
+                                <option value="System" onchange="SetData(this)">System</option>
+                            </select>
+                        </div>
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">Homepage</label>
+                            <select class="valid--input js-choice3 select_option" name="selectcheck3"
+                                onchange="SaveSelectValue(this)">
+                                <option value="Starred Projects" onchange="SetData(this)">Starred Projects</option>
+                                <option value="Sunday" onchange="SetData(this)">Sunday</option>
+                                <option value="System" onchange="SetData(this)">System</option>
+                            </select>
+                        </div>
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">Indent Size</label>
+                            <input class="valid--input" type="text" placeholder="Default" pattern=".{1,}">
+                        </div>
+
+                        <div class="valid--block">
+                            <label class="valid--lable text--fon">Personal Code</label>
+                            <div class="valid--block--code">
+                                <div class="valid--input--lable">
+                                    <input class="valid--input valid--input--code" id="password" type="text"
+                                        placeholder="Code" pattern=".{1,}" disabled>
+                                    <lable class="valid--text--lable text--fon">12&nbsp;digits</lable>
+                                </div>
+                                <p class="text--fon">-</p>
+
+                                <input class="valid--input valid--input--code" id="password2" type="text"
+                                    placeholder="Code" pattern=".{1,}" disabled>
+                                <p class="text--fon">-</p>
+                                <input class="valid--input valid--input--code" id="password3" type="text"
+                                    placeholder="Code" pattern=".{1,}" disabled>
+                            </div>
+                        </div>
+
+                        <div class="valid--block--checkbox">
+                            <label class="valid--lable valid--lable--margin text--fon">Theme</label>
+                            <div class="valid--block--radio">
+
+                                <div class="valid--input--checkbox form_radio">
+                                    <input class="valid--checkbox" id="radio-1" type="radio" name="radio" value="1"
+                                     checked required>
+                                    <label class=" valid--text text--fon" for="radio-1">Light</label>
+                                </div>
+
+                                <div class="valid--input--checkbox form_radio">
+                                    <input class="valid--checkbox" id="radio-2" type="radio" name="radio" value="2"
+                                        required>
+                                    <label class="valid--text text--fon" for="radio-2">Dark</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="valid--botton">
+                            <button class="btn-reset valid--btn valid--btn--style" type="submit">Apply and Save</button>
+                            <button class="btn-reset valid--btn valid--btn--style2" type="reset">Cansel</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container fon--container">
+            <div class="footer fon--block">
+                <div class="footer--img">
+                </div>
+                <div class="footer--info">
+                    <p class="footer--text text--fon">2020-2022 <a class="text--link" href="#">Terms of Service</a> and
+                        <a class="text--link" href="#">Conditions</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
