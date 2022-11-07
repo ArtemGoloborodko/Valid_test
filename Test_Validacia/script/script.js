@@ -7,6 +7,7 @@ let fonLink = document.querySelectorAll('.text--link')
 let fonbtn = document.querySelector('.valid--btn--style')
 let fonbtn2 = document.querySelector('.valid--btn--style2')
 let fonInput = document.querySelectorAll('.valid--input')
+let body = document.getElementById('body')
 
 
 //создаем функцию фона 
@@ -34,6 +35,7 @@ function colorFon() {
     fonZag.classList.add('dark--color--zag')
     fonbtn.classList.add('dark--color--btn')
     fonbtn2.classList.add('dark--color--btn2')
+    body.classList.add('dark')
 }
 
 //убираем черный фон
@@ -61,6 +63,7 @@ function colorFonBack() {
     fonZag.classList.remove('dark--color--zag')
     fonbtn.classList.remove('dark--color--btn')
     fonbtn2.classList.remove('dark--color--btn2')
+    body.classList.remove('dark')
 }
 
 
