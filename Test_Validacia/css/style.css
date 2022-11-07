@@ -11,6 +11,10 @@ html {
 :root {
     --fontZag-color: #F3F3F3;
     --fontText-color: #DFDADA;
+    --fonBag-color: #DFDADA;
+    --fonBag2-color:  #F8F8F8;
+    --fonBag3-color: #DFDADA;
+    --fonBag4-color: #0B0A0A;
 }
 
 a:active,
@@ -198,8 +202,12 @@ h3 {
     min-height: 21px;
     border-radius: 10px;
     border: 1px solid #887C7C;
-    background-color: #DFDADA;
-    /* color: #F3F3F3 */
+    background-color: var(--fonBag-color);
+    color: var(--fonBag4-color); 
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+    background-color: var(--fonBag3-color);
 }
 
 .is-open .choices__inner {
@@ -234,9 +242,10 @@ h3 {
 
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
-    background-color: #F8F8F8;
+    background-color: var(--fonBag2-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+    color: var(--fonBag4-color);
     top: 36px;
     width: 196px;
     border: none;
@@ -475,4 +484,14 @@ h3 {
 .dark--color--btn2 {
     background-color: #424242;
     color: #AAC9F1;
+}
+
+
+.dark {
+    --fontZag-color: #F3F3F3;
+    --fontText-color: #DFDADA;
+    --fonBag-color: #585050;
+    --fonBag2-color:  #424242;
+    --fonBag3-color: #585050;
+    --fonBag4-color: #F2F2F2;
 }
